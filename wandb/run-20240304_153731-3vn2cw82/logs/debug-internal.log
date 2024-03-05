@@ -1,0 +1,768 @@
+2024-03-04 15:37:32,200 INFO    StreamThr :7997 [internal.py:wandb_internal():86] W&B internal server running at pid: 7997, started at: 2024-03-04 15:37:32.199972
+2024-03-04 15:37:32,201 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status
+2024-03-04 15:37:32,203 INFO    WriterThread:7997 [datastore.py:open_for_write():87] open: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/run-3vn2cw82.wandb
+2024-03-04 15:37:32,203 DEBUG   SenderThread:7997 [sender.py:send():382] send: header
+2024-03-04 15:37:32,203 DEBUG   SenderThread:7997 [sender.py:send():382] send: run
+2024-03-04 15:37:32,581 INFO    SenderThread:7997 [dir_watcher.py:__init__():211] watching files in: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files
+2024-03-04 15:37:32,581 INFO    SenderThread:7997 [sender.py:_start_run_threads():1136] run started: 3vn2cw82 with start time 1709563051.276223
+2024-03-04 15:37:32,591 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: check_version
+2024-03-04 15:37:32,591 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: check_version
+2024-03-04 15:37:32,659 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: run_start
+2024-03-04 15:37:32,659 DEBUG   HandlerThread:7997 [system_info.py:__init__():27] System info init
+2024-03-04 15:37:32,659 DEBUG   HandlerThread:7997 [system_info.py:__init__():42] System info init done
+2024-03-04 15:37:32,659 INFO    HandlerThread:7997 [system_monitor.py:start():194] Starting system monitor
+2024-03-04 15:37:32,659 INFO    SystemMonitor:7997 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-04 15:37:32,660 INFO    SystemMonitor:7997 [interfaces.py:start():190] Started cpu monitoring
+2024-03-04 15:37:32,660 INFO    HandlerThread:7997 [system_monitor.py:probe():214] Collecting system info
+2024-03-04 15:37:32,660 INFO    SystemMonitor:7997 [interfaces.py:start():190] Started disk monitoring
+2024-03-04 15:37:32,660 INFO    SystemMonitor:7997 [interfaces.py:start():190] Started gpu monitoring
+2024-03-04 15:37:32,661 INFO    SystemMonitor:7997 [interfaces.py:start():190] Started memory monitoring
+2024-03-04 15:37:32,661 INFO    SystemMonitor:7997 [interfaces.py:start():190] Started network monitoring
+2024-03-04 15:37:32,685 DEBUG   HandlerThread:7997 [system_info.py:probe():151] Probing system
+2024-03-04 15:37:32,686 DEBUG   HandlerThread:7997 [system_info.py:_probe_git():136] Probing git
+2024-03-04 15:37:32,695 DEBUG   HandlerThread:7997 [system_info.py:_probe_git():144] Probing git done
+2024-03-04 15:37:32,696 DEBUG   HandlerThread:7997 [system_info.py:probe():199] Probing system done
+2024-03-04 15:37:32,696 DEBUG   HandlerThread:7997 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-97-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-03-04T14:37:32.686017', 'startedAt': '2024-03-04T14:37:31.274433', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'scripts/hyper_parameter_tuning.py', 'codePathLocal': 'scripts/hyper_parameter_tuning.py', 'codePath': 'scripts/hyper_parameter_tuning.py', 'git': {'remote': 'git@github.com:mgomezandreu/plr-exercise.git', 'commit': 'a060e8f4c2dbaf6383095053dabbccd9ae6bfdfa'}, 'email': 'mario-gomez-andreu@outlook.com', 'root': '/home/mario/Projects/PLR/plr-exercise', 'host': 'moore', 'username': 'mario', 'executable': '/home/mario/venv/plr/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2269.74, 'min': 2200.0, 'max': 3800.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 3315.84, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3800.0}], 'disk': {'/': {'total': 915.3232879638672, 'used': 61.435943603515625}}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 31.217880249023438}}
+2024-03-04 15:37:32,696 INFO    HandlerThread:7997 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-04 15:37:32,696 INFO    HandlerThread:7997 [system_monitor.py:probe():227] Publishing system info
+2024-03-04 15:37:32,696 INFO    HandlerThread:7997 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-04 15:37:32,697 DEBUG   SenderThread:7997 [sender.py:send():382] send: files
+2024-03-04 15:37:32,697 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-04 15:37:32,699 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-04 15:37:32,699 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: python_packages
+2024-03-04 15:37:32,699 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:37:32,699 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:37:32,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:37:32,856 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-04 15:37:32,917 DEBUG   SenderThread:7997 [sender.py:send():382] send: telemetry
+2024-03-04 15:37:32,917 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: log_artifact
+2024-03-04 15:37:33,209 INFO    wandb-upload_0:7997 [upload_job.py:push():131] Uploaded file /tmp/tmprqujg49zwandb/wau1y0mj-wandb-metadata.json
+2024-03-04 15:37:33,347 INFO    SenderThread:7997 [sender.py:send_request_log_artifact():1470] logged artifact source-plr_exercise-scripts_hyper_parameter_tuning.py - {'id': 'QXJ0aWZhY3Q6NzQwMzM5NjYx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NTIyNjQ1Mg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzQwMzM5NjYx', 'versionIndex': 0}}}
+2024-03-04 15:37:33,582 INFO    Thread-711:7997 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:33,582 INFO    Thread-711:7997 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-metadata.json
+2024-03-04 15:37:33,582 INFO    Thread-711:7997 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/requirements.txt
+2024-03-04 15:37:35,582 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:37,240 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:37:37,582 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:39,582 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:41,583 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:43,112 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:37:45,322 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:37:45,323 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:37:45,323 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:37:45,324 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:37:45,584 INFO    Thread-711:7997 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:37:46,244 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:37:46,244 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:37:46,244 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:37:46,244 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:37:46,584 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:37:47,584 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:47,699 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:37:47,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:37:47,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:37:48,151 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:37:49,584 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:51,585 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:53,374 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:37:53,585 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:37:58,375 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:37:58,446 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:37:58,447 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:37:58,447 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:37:58,448 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:37:58,586 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:37:59,374 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:37:59,375 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:37:59,375 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:37:59,375 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:37:59,586 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:01,587 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:02,699 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:38:02,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:38:02,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:38:03,390 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:03,587 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:03,587 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/config.yaml
+2024-03-04 15:38:05,587 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:07,588 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:09,370 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:11,521 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:11,522 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:11,522 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:11,523 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:11,588 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:12,458 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:12,459 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:12,459 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:12,459 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:12,589 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:13,589 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:14,407 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:15,589 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:17,589 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:17,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:38:17,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:38:17,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:38:19,471 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:19,590 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:24,417 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:24,417 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:24,419 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:24,420 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:24,591 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:25,353 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:25,354 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:25,354 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:25,354 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:25,354 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:25,591 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:27,591 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:29,592 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:30,388 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:31,592 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:32,661 DEBUG   SystemMonitor:7997 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-04 15:38:32,662 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:38:32,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:38:32,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:38:32,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:38:33,593 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:35,935 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:37,477 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:37,478 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:37,478 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:37,478 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:37,593 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:38,410 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:38,411 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:38,411 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:38,411 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:38,594 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:39,594 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:41,003 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:41,594 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:43,595 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:45,595 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:46,555 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:47,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:38:47,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:38:47,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:38:50,565 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:50,565 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:50,566 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:50,567 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:50,596 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:51,494 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:38:51,495 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:38:51,495 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:38:51,495 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:38:51,581 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:51,596 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:38:53,597 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:55,597 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:56,625 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:38:57,597 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:38:59,598 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:01,633 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:02,662 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:39:02,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:39:02,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:39:02,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:39:03,736 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:03,737 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:03,737 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:03,737 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:04,599 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:04,688 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:04,688 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:04,688 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:04,688 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:05,599 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:05,599 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:06,652 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:07,599 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:09,600 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:11,600 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:11,717 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:16,642 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:16,642 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:16,642 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:16,644 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:17,571 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:17,575 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:17,575 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:17,575 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:17,575 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:17,601 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:17,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:39:17,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:39:17,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:39:19,601 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:21,602 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:22,604 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:23,602 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:25,602 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:27,732 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:29,813 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:29,813 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:29,813 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:29,815 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:30,603 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:30,742 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:30,743 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:30,743 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:30,743 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:31,603 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:31,604 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:32,662 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:39:32,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:39:32,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:39:32,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:39:32,910 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:33,604 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:35,604 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:37,605 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:37,965 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:42,966 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:43,138 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:43,138 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:43,138 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:43,140 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:43,606 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:44,062 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:44,062 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:44,062 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:44,063 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:44,606 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:45,606 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:47,607 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:47,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:39:47,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:39:47,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:39:48,019 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:49,607 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:51,607 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:39:53,227 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:56,400 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:56,400 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:56,401 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:56,402 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:56,608 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:57,347 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:39:57,347 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:39:57,348 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:39:57,348 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:39:57,608 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:39:58,285 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:39:59,609 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:01,609 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:02,663 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:40:02,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:40:02,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:40:02,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:40:03,344 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:03,610 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:05,610 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:08,410 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:09,381 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:09,382 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:09,382 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:09,383 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:09,611 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:10,333 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:10,334 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:10,334 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:10,334 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:10,611 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:11,611 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:13,440 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:13,612 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:15,612 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:17,612 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:17,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:40:17,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:40:17,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:40:18,903 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:22,596 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:22,596 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:22,596 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:22,597 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:22,613 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:23,533 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:23,533 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:23,533 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:23,534 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:23,614 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:23,951 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:25,614 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:27,614 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:28,965 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:29,615 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:31,615 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:32,663 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:40:32,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:40:32,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:40:32,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:40:34,884 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:35,696 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:35,697 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:35,697 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:35,697 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:36,616 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:36,633 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:36,633 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:36,633 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:36,634 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:37,616 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:37,616 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:39,617 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:39,916 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:41,617 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:43,617 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:45,742 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:47,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:40:47,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:40:47,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:40:48,957 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:48,957 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:48,957 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:48,957 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:49,619 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:49,913 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:40:49,914 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:40:49,914 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:40:49,914 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:40:50,619 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:40:50,784 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:52,619 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:54,619 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:55,793 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:40:56,620 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:40:58,620 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:01,060 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:02,255 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:02,256 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:02,256 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:02,256 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:02,621 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:02,664 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:41:02,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:41:02,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:41:02,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:41:03,223 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:03,223 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:03,223 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:03,223 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:03,621 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:04,621 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:06,109 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:06,622 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:08,622 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:10,623 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:11,370 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:12,623 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:15,437 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:15,438 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:15,438 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:15,440 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:15,624 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:16,367 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:16,367 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:16,367 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:16,367 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:16,392 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:16,624 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:17,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:41:17,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:41:17,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:41:18,624 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:20,625 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:21,435 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:22,625 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:24,625 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:27,188 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:28,313 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:28,313 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:28,313 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:28,315 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:28,627 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:29,247 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:29,248 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:29,248 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:29,248 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:29,627 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:30,627 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:32,217 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:32,627 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:32,664 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:41:32,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:41:32,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:41:32,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:41:34,628 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:36,628 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:37,280 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:41,510 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:41,510 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:41,510 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:41,512 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:41,629 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:42,438 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:42,438 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:42,439 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:42,439 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:42,439 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:42,629 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:44,630 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:46,631 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:47,492 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:47,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:41:47,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:41:47,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:41:48,631 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:50,631 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:41:52,821 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:54,993 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:54,993 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:54,993 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:54,995 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:55,632 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:55,934 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:41:55,935 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:41:55,935 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:41:55,935 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:41:56,632 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:41:57,824 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:41:58,633 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:00,633 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:02,634 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:02,664 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:42:02,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:42:02,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:42:02,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:42:02,925 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:04,634 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:07,926 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:08,234 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:08,235 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:08,235 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:08,236 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:08,635 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:09,171 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:09,171 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:09,171 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:09,172 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:09,635 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:10,636 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:12,636 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:12,944 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:14,637 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:16,637 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:17,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:42:17,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:42:17,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:42:18,890 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:20,985 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:20,986 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:20,986 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:20,987 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:21,638 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:21,912 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:21,913 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:21,913 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:21,913 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:22,638 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:23,904 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:24,639 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:26,639 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:28,639 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:29,039 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:30,640 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:32,665 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:42:32,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:42:32,702 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:42:32,703 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:42:34,480 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:34,480 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:34,480 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:34,480 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:34,480 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:34,640 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:35,450 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:35,451 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:35,451 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:35,451 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:35,641 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:38,641 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:39,540 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:40,642 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:42,642 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:44,589 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:44,642 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:47,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:42:47,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:42:47,702 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:42:47,817 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:47,914 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:47,914 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:47,914 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:48,643 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:48,763 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:42:48,764 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:42:48,764 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:42:48,764 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:42:49,589 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:49,643 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:42:50,643 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:52,644 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:54,604 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:42:54,644 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:56,645 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:42:59,736 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:01,028 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:01,029 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:01,029 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:01,029 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:01,646 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:01,961 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:01,961 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:01,961 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:01,962 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:02,646 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:02,665 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:43:02,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:43:02,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:43:02,703 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:43:04,646 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:04,789 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:06,647 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:08,647 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:10,647 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:10,779 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:13,886 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:13,887 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:13,887 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:13,887 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:14,648 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:14,811 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:14,811 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:14,811 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:14,812 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:15,648 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:15,809 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:16,649 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:17,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:43:17,702 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:43:17,703 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:43:18,649 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:20,649 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:21,560 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:22,650 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:26,561 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:26,565 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:26,566 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:26,566 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:26,566 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:26,651 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:27,494 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:27,494 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:27,494 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:27,495 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:27,651 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:28,651 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:30,652 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:31,625 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:32,652 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:32,666 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:43:32,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:43:32,702 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:43:32,703 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:43:34,653 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:36,653 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:37,558 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:39,719 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:39,720 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:39,720 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:39,720 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:40,654 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:40,664 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:40,664 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:40,664 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:40,664 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:41,655 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:42,572 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:42,655 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:44,655 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:46,656 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:47,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:43:47,702 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:43:47,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:43:47,851 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:48,656 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:52,851 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:52,921 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:52,921 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:52,921 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:52,922 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:53,657 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:53,858 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:43:53,858 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:43:53,858 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:43:53,859 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:43:54,657 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:43:56,658 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:43:57,893 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:43:58,658 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:44:00,659 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:44:02,659 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:44:02,666 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:44:02,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 15:44:02,702 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:44:02,702 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 15:44:02,918 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:44:06,199 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:44:06,199 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:44:06,199 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:44:06,199 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:44:06,660 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:44:07,131 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 15:44:07,131 DEBUG   SenderThread:7997 [sender.py:send():382] send: history
+2024-03-04 15:44:07,131 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 15:44:07,131 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:44:07,132 DEBUG   SenderThread:7997 [sender.py:send():382] send: telemetry
+2024-03-04 15:44:07,132 DEBUG   SenderThread:7997 [sender.py:send():382] send: exit
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:send_exit():589] handling exit code: 0
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:send_exit():591] handling runtime: 394
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:send_exit():597] send defer
+2024-03-04 15:44:07,132 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,132 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-04 15:44:07,132 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 1
+2024-03-04 15:44:07,132 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,132 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-04 15:44:07,132 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-04 15:44:07,132 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 2
+2024-03-04 15:44:07,132 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,132 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-04 15:44:07,133 INFO    HandlerThread:7997 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-04 15:44:07,133 INFO    HandlerThread:7997 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-04 15:44:07,133 INFO    HandlerThread:7997 [interfaces.py:finish():202] Joined disk monitor
+2024-03-04 15:44:07,133 DEBUG   SystemMonitor:7997 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-04 15:44:07,133 DEBUG   SystemMonitor:7997 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-04 15:44:07,155 INFO    HandlerThread:7997 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-04 15:44:07,155 INFO    HandlerThread:7997 [interfaces.py:finish():202] Joined memory monitor
+2024-03-04 15:44:07,155 INFO    HandlerThread:7997 [interfaces.py:finish():202] Joined network monitor
+2024-03-04 15:44:07,155 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,155 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-04 15:44:07,155 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 3
+2024-03-04 15:44:07,155 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,155 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-04 15:44:07,158 DEBUG   SenderThread:7997 [sender.py:send():382] send: stats
+2024-03-04 15:44:07,158 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,158 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-04 15:44:07,158 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 4
+2024-03-04 15:44:07,158 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,158 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-04 15:44:07,159 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,159 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-04 15:44:07,159 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 5
+2024-03-04 15:44:07,159 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,159 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-04 15:44:07,159 DEBUG   SenderThread:7997 [sender.py:send():382] send: summary
+2024-03-04 15:44:07,159 INFO    SenderThread:7997 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 15:44:07,159 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,159 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-04 15:44:07,159 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 6
+2024-03-04 15:44:07,159 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,159 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-04 15:44:07,159 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,159 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-04 15:44:07,162 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 15:44:07,361 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 7
+2024-03-04 15:44:07,361 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,361 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-04 15:44:07,362 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,362 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-04 15:44:07,661 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:44:07,661 INFO    Thread-711:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/config.yaml
+2024-03-04 15:44:07,906 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 8
+2024-03-04 15:44:07,906 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,906 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-04 15:44:07,907 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:07,907 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-04 15:44:07,907 INFO    SenderThread:7997 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-04 15:44:07,907 INFO    SenderThread:7997 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-04 15:44:07,908 INFO    SenderThread:7997 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-04 15:44:07,913 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 9
+2024-03-04 15:44:07,913 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:07,914 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-04 15:44:07,914 DEBUG   SenderThread:7997 [sender.py:send():382] send: artifact
+2024-03-04 15:44:08,132 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-04 15:44:08,427 INFO    SenderThread:7997 [sender.py:send_artifact():1494] sent artifact job-git_github.com_mgomezandreu_plr-exercise.git_scripts_hyper_parameter_tuning.py - {'id': 'QXJ0aWZhY3Q6NzQwMzQ0OTA4', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NTIyODQzMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzQwMzQ0OTA4', 'versionIndex': 0}}}
+2024-03-04 15:44:08,427 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:08,427 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-04 15:44:08,427 INFO    SenderThread:7997 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-04 15:44:08,661 INFO    SenderThread:7997 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:44:08,662 INFO    SenderThread:7997 [dir_watcher.py:finish():388] scan: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files
+2024-03-04 15:44:08,662 INFO    SenderThread:7997 [dir_watcher.py:finish():402] scan save: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-metadata.json wandb-metadata.json
+2024-03-04 15:44:08,662 INFO    SenderThread:7997 [dir_watcher.py:finish():402] scan save: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json wandb-summary.json
+2024-03-04 15:44:08,662 INFO    SenderThread:7997 [dir_watcher.py:finish():402] scan save: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/requirements.txt requirements.txt
+2024-03-04 15:44:08,662 INFO    SenderThread:7997 [dir_watcher.py:finish():402] scan save: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/config.yaml config.yaml
+2024-03-04 15:44:08,662 INFO    SenderThread:7997 [dir_watcher.py:finish():402] scan save: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log output.log
+2024-03-04 15:44:08,663 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 10
+2024-03-04 15:44:08,665 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: poll_exit
+2024-03-04 15:44:08,665 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:08,665 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-04 15:44:08,668 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:08,668 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-04 15:44:08,668 INFO    SenderThread:7997 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-04 15:44:09,049 INFO    wandb-upload_1:7997 [upload_job.py:push():131] Uploaded file /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/wandb-summary.json
+2024-03-04 15:44:09,064 INFO    wandb-upload_2:7997 [upload_job.py:push():131] Uploaded file /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/config.yaml
+2024-03-04 15:44:09,132 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-04 15:44:09,133 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: poll_exit
+2024-03-04 15:44:09,409 INFO    wandb-upload_3:7997 [upload_job.py:push():131] Uploaded file /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/output.log
+2024-03-04 15:44:09,499 INFO    wandb-upload_0:7997 [upload_job.py:push():131] Uploaded file /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/files/requirements.txt
+2024-03-04 15:44:09,699 INFO    Thread-710:7997 [sender.py:transition_state():617] send defer: 11
+2024-03-04 15:44:09,700 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:09,700 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-04 15:44:09,700 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:09,700 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-04 15:44:09,700 INFO    SenderThread:7997 [file_pusher.py:join():178] waiting for file pusher
+2024-03-04 15:44:09,700 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 12
+2024-03-04 15:44:09,701 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:09,701 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-04 15:44:09,701 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:09,701 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-04 15:44:09,701 INFO    SenderThread:7997 [file_stream.py:finish():595] file stream finish called
+2024-03-04 15:44:10,133 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-04 15:44:10,170 INFO    SenderThread:7997 [file_stream.py:finish():599] file stream finish is done
+2024-03-04 15:44:10,171 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 13
+2024-03-04 15:44:10,171 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: poll_exit
+2024-03-04 15:44:10,171 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:10,171 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-04 15:44:10,171 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:10,171 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-04 15:44:10,171 INFO    SenderThread:7997 [sender.py:transition_state():617] send defer: 14
+2024-03-04 15:44:10,172 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: defer
+2024-03-04 15:44:10,172 INFO    HandlerThread:7997 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-04 15:44:10,172 DEBUG   SenderThread:7997 [sender.py:send():382] send: final
+2024-03-04 15:44:10,172 DEBUG   SenderThread:7997 [sender.py:send():382] send: footer
+2024-03-04 15:44:10,172 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: defer
+2024-03-04 15:44:10,172 INFO    SenderThread:7997 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-04 15:44:10,173 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-04 15:44:10,173 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: poll_exit
+2024-03-04 15:44:10,174 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 15:44:10,174 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: server_info
+2024-03-04 15:44:10,175 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: server_info
+2024-03-04 15:44:10,215 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-04 15:44:10,215 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-04 15:44:10,216 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: job_info
+2024-03-04 15:44:10,324 DEBUG   SenderThread:7997 [sender.py:send_request():409] send_request: job_info
+2024-03-04 15:44:10,325 DEBUG   HandlerThread:7997 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-04 15:44:10,325 INFO    HandlerThread:7997 [handler.py:finish():869] shutting down handler
+2024-03-04 15:44:11,217 INFO    WriterThread:7997 [datastore.py:close():296] close: /home/mario/Projects/PLR/plr-exercise/wandb/run-20240304_153731-3vn2cw82/run-3vn2cw82.wandb
+2024-03-04 15:44:11,324 INFO    SenderThread:7997 [sender.py:finish():1572] shutting down sender
+2024-03-04 15:44:11,324 INFO    SenderThread:7997 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-04 15:44:11,324 INFO    SenderThread:7997 [file_pusher.py:join():178] waiting for file pusher
