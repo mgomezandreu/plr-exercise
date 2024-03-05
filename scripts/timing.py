@@ -10,6 +10,7 @@ import time
 
 class Net(nn.Module):
     def __init__(self):
+        """A simple convolutional neural network."""
         super(Net, self).__init__()
         self.conv1 = nn.Conv2d(1, 32, 3, 1)
         self.conv2 = nn.Conv2d(32, 64, 3, 1)
@@ -19,6 +20,7 @@ class Net(nn.Module):
         self.fc2 = nn.Linear(128, 10)
 
     def forward(self, x):
+        """Pass x forward through the network and return the output."""
         x = self.conv1(x)
         x = F.relu(x)
         x = self.conv2(x)

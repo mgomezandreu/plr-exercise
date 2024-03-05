@@ -14,6 +14,16 @@ from plr_exercise.models.cnn import Net
 
 
 def train(args, model, device, train_loader, optimizer, epoch):
+    """ Train a model for one epoch.
+    
+    Arguments:
+    args            -- Hyperparameters of the model
+    model           -- pytorch model object used for training
+    device          -- device on which to train on
+    train_loader    -- data loader for training data
+    optimizer       -- optimizer to be used
+    epoch           -- number of current epoch
+    """
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
 
@@ -53,6 +63,15 @@ def train(args, model, device, train_loader, optimizer, epoch):
 
 
 def test(model, device, test_loader, epoch):
+    """ Test the model on test data and return the test_loss.
+
+    Arguments:
+    model           -- pytorch model object to be tested
+    device          -- device on which to train
+    test_loader     -- data loader for test data
+    epoch           -- number of current epoch
+    """
+
     model.eval()
     test_loss = 0
     correct = 0
@@ -80,6 +99,7 @@ def test(model, device, test_loader, epoch):
 
 
 def objective(trial):
+    """Run training and testing process for parameters specified in trial and return the final test loss."""
     args = types.SimpleNamespace()
     args.batch_size = 64
     args.test_batch_size = 1000
