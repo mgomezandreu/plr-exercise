@@ -185,3 +185,13 @@ This may include:
 - Measuring the time
 
 ## Other usefull tasks [Bonus Points]
+
+### Task 6
+Add Hydra config to your project.
+```shell
+pip install hydra-core --upgrade
+```
+It should be possible to run your project in two modes: Classic digit recognition and classification odd/even classification using a neural network directly.
+Adapt the network architecture as well as the data proprocessing based on your configuration. Dont forget to also adapt wandb logging.
+This might be a good starting point: https://hydra.cc/docs/intro/
+
